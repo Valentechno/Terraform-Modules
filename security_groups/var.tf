@@ -20,12 +20,12 @@ variable "sg_tag_name" {
 
 variable "ingressrules" {
   type    = list(number)
-  default = null
+  default = [ 22 ]
 }
 
 variable "egressrules" {
   type    = list(number)
-  default = null
+  default = [ 22 ]
 }
 
 variable "ingressprotocol" {
