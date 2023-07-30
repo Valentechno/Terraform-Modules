@@ -1,6 +1,11 @@
 variable "ami" {
   type    = string
-  default = null
+  default = "ami-024e6efaf93d85776"
+}
+
+variable "ec2_tag_name" {
+  type    = string
+  default = "TF Generated EC2 Instance"
 }
 
 variable "instance_type" {
@@ -15,7 +20,7 @@ variable "user_data" {
 
 variable "associate_public_ip_address" {
   type    = bool
-  default = null
+  default = true
 }
 
 variable "availability_zone" {

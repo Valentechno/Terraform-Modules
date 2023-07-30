@@ -8,6 +8,10 @@ resource "aws_instance" "instance" {
   subnet_id                   = var.subnet_id
   vpc_security_group_ids      = var.vpc_security_group_ids
   key_name                    = aws_key_pair.generated-key.key_name
+
+  tags = {
+    Name = var.ec2_tag_name
+  }
 }
 
 resource "tls_private_key" "private-key" {
