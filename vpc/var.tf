@@ -1,3 +1,8 @@
+variable "vpc_tag_name" {
+  type = string
+  default = "val-tf-vpc"
+}
+
 variable "cidr_block" {
   type    = string
   default = "10.0.0.0/16"
